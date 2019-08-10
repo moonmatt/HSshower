@@ -4,21 +4,8 @@ if (isset($_POST['submit'])) {
     $code = str_replace("<", "&lt;", $code);
     $code = str_replace(">", "&gt;", $code);
     $code = htmlspecialchars($code);
-} else {
-
 }
 ?>
-<script>
-function responsive() {
-    if (document.getElementById("header__menu").classList != "mystyle") {
-        document.getElementById("header__menu").classList = "mystyle";
-    } else {
-        document.getElementById("header__menu").classList.remove("mystyle");
-        document.getElementById("header__menu").classList = "no-mobile";
-    }
-}
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +55,7 @@ function responsive() {
        <div class="page__content">
           <h1>Insert your code</h1>
           <form action="#" method="POST" id="myform">
-            <textarea name="code" id="code" cols="30" rows="10" form="myform"></textarea>
+            <textarea name="code" id="code" cols="30" rows="10" form="myform" required></textarea>
             <input type="submit" name="submit" value="Submit">
           </form>
        </div>
@@ -80,14 +67,14 @@ function responsive() {
    <div class="page boxed rounded shadow">
        <div class="page__content">
           <h1>Output code</h1>
-          <textarea cols="30" rows="10"><?php if (isset($_POST['submit'])) { echo $code; } ?></textarea>
+          <textarea cols="30" rows="10" readonly><?php if (isset($_POST['submit'])) { echo $code; } ?></textarea>
        </div>
    </div>
 
               <div class="footer">
         <div class="footer__content boxed clearfix">
         <div class="footer__content__left">
-            <p>Designed using <a href="https://mogi.moonmatt.dev">Mogi</a></p>
+            <p>Designed using <a href="https://mogi.moonmatt.dev">Mogi</a></p><img src="icon.jpg" class="badge" title="Early supporter">
         </div>
                 <div class="footer__content__right">
             <a href="https://github.com/moonmatt/HSshower"><ul><i class="fab fa-github"></i></ul></a>
@@ -125,5 +112,15 @@ function updateTheme() {
 }
 updateTheme();  
     </script>
+    <script>
+function responsive() {
+    if (document.getElementById("header__menu").classList != "mystyle") {
+        document.getElementById("header__menu").classList = "mystyle";
+    } else {
+        document.getElementById("header__menu").classList.remove("mystyle");
+        document.getElementById("header__menu").classList = "no-mobile";
+    }
+}
+</script>
 </body>
 </html>
