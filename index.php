@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
        <div class="header__content boxed">
         <div class="header__logo logo" style="padding-left: 0px;"><a href="#"><h3>HSshower</h3></a></div>
         <div class="header__menu" id="header__menu" >
-           <a href="https://moonmatt.dev"><div class="header__menu__item"><ul><i class="fas fa-moon"></i>moonmatt</ul></div></a>
+           <a href="https://moonmatt.cf"><div class="header__menu__item"><ul><i class="fas fa-moon"></i>moonmatt</ul></div></a>
         </div>
     <a href="#"><div class="header__menu__item responsiveicon" onclick="responsive()"><ul><i class="fas fa-bars"></i></ul></div></a>
     </div>
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
               <div class="footer">
         <div class="footer__content boxed clearfix">
         <div class="footer__content__left">
-            <p>Designed using <a href="https://mogi.moonmatt.dev">Mogi</a></p><img src="icon.jpg" class="badge" title="Early supporter">
+            <p>Designed using <a href="https://mogi.cf">Mogi</a></p><img src="icon.jpg" class="badge" title="Early supporter">
         </div>
                 <div class="footer__content__right">
             <a href="https://github.com/moonmatt/HSshower"><ul><i class="fab fa-github"></i></ul></a>
